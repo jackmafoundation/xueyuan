@@ -222,13 +222,12 @@
   }
 }
 
-.prism-player {
-  margin-top: 0;
-}
-
 .post {
   .prism-player {
     margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+    }
   }
 }
 
