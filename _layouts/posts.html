@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include banner.html %}
+<div class="container page">
+  <div class="row post-list">
+    {% for post in site.posts %}
+      <div class="col-md-4">{% include post_item.html post="post" %}</div>
+    {% endfor %}
+  </div>
+</div>

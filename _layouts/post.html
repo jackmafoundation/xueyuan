@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="banner post-banner" style="position: absolute;"></div>
+
+<div class="container post" style="position: relative;">
+  <article>
+    {% if page.video %}
+      {% include aliplayer.html source=page.video.source cover=page.cover %}
+    {% else %}
+      <div class="cover" style="background-image: url({{ page.cover }})"></div>
+    {% endif %}
+    <div class="post-content">
+      <div class="page-title">{{ page.title }}</div>
+      {% if page.author %}
+        <p class="page-subtitle">{{ page.author }}</p>
+      {% endif %}
+      {% for course in site.courses %}
+        {% if course.items contains page.title %}
+        <a href="{{ course.url }}" class="course-ref-card">相关课程：{{ course.title }}</a>
+        {% endif %}
+      {% endfor %}
+      {{ content }}
+    </div>
+</div>

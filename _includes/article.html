@@ -1,0 +1,22 @@
+<div>
+  {% for p in site.posts %}
+    {% if p.title == include.title %}
+      {% assign post = p %}
+    {% endif %}
+  {% endfor %}
+  {% if post %}
+  <a class="embed-item" href="{{post.url}}">
+    <div class="embed-item-cover" style="background-image: url({{ post.cover }})">
+      {% if post.video %}
+      <div class="v-badge"><i class="iconfont ic-play"></i>{{ post.video.time }}</div>
+      {% endif %}
+    </div>
+    <div class="embed-item-text">
+      <div class="embed-item-title">{{ post.title }}</div>
+      <div class="embed-item-abstract">{{ post.abstract }}</div>
+    </div>
+  </a>
+  {% else %}
+    <p>没有找到：{{ include.title }}</p>
+  {% endif %}
+</div>

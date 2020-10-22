@@ -1,0 +1,8 @@
+# _data/navigation.yml
+items:
+  - name: 全部课程
+    link: /courses/
+  - name: 课程专题
+    link: /collections/
+  - name: 直播日历
+    link: /lives/

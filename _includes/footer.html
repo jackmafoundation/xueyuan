@@ -1,0 +1,48 @@
+
+<script src="{{ "assets/bootstrap/js/jquery.min.js" | prepend: site.qiniu }}"></script>
+<script src="{{ "assets/bootstrap/js/bootstrap.min.js" | prepend: site.qiniu }}"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+      if (!user) {
+          window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+          });
+      }
+      });
+  }
+</script>
+
+<script>
+	jQuery(document).ready(function($) {
+	  $('.field').mouseover(function(){
+      var e=this;
+      $(".field-active").removeClass('field-active')
+      $(e).addClass("field-active")
+	  })
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 320) {
+        $('#side-menu').addClass('side-menu-fixed')
+      } else {
+        $('#side-menu').removeClass('side-menu-fixed')
+      }
+
+      if (document.documentElement.scrollTop > 480) {
+        $('#navbar-index').removeClass('navbar-inverse navbar-transparent')
+      } else {
+        $('#navbar-index').addClass('navbar-inverse navbar-transparent')
+      }
+    };
+  });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43779642-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43779642-2');
+</script>

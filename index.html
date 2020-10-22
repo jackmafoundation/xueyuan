@@ -1,0 +1,153 @@
+---
+layout: home
+---
+
+<div class="home-banner container">
+	<div class="home-swiper">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				{% for slide in site.data.slides %}
+					<a class="swiper-slide" href="{{ slide.url }}" >
+						<div class="swiper-image pc" style="background-image: url({{ slide.image }})"></div>
+						<div class="swiper-image mobile" style="background-image: url({{ slide.image-mobile }})"></div>
+					</a>
+				{% endfor %}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<div class="home-banner-navs">
+		<div class="row">
+			<div class="col-md-6">
+				<a class="home-banner-nav-item" href="/courses#教师思变力">
+					<div class="image" style="background-image: url(https://img.mayun.xin/upload/2020052612/71d6032ad5ef04ce69fd06679e2c685b.png)"></div>
+					<div class="text">教师思变力</div>
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a class="home-banner-nav-item" href="/courses#校长领导力">
+					<div class="image" style="background-image: url(https://img.mayun.xin/upload/2020052612/71d6032ad5ef04ce69fd06679e2c685b.png)"></div>
+					<div class="text">校长领导力</div>
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a class="home-banner-nav-item" href="/courses#大家说">
+					<div class="image" style="background-image: url(https://img.mayun.xin/upload/2020052612/71d6032ad5ef04ce69fd06679e2c685b.png)"></div>
+					<div class="text">大家说</div>
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a class="home-banner-nav-item" href="/article/马校长说">
+					<div class="image" style="background-image: url(https://img.mayun.xin/upload/2020052612/71d6032ad5ef04ce69fd06679e2c685b.png)"></div>
+					<div class="text">马校长说</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="home-banner-navs-mobile">
+		<a class="mobile-nav-item" href="/courses">
+			<div class="icon"></div>
+			<div>全部课程</div>
+		</a>
+		<a class="mobile-nav-item" href="/lives">
+			<div class="icon"></div>
+			<div>直播日历</div>
+		</a>
+		<a class="mobile-nav-item" href="/topics">
+			<div class="icon"></div>
+			<div>课程专题</div>
+		</a>
+		<a class="mobile-nav-item" href="/article/jack-ma-talks">
+			<div class="icon"></div>
+			<div>马校长说</div>
+		</a>
+	</div>
+</div>
+
+<div class="container home" style="position: relative;">
+	
+
+	<div class="section" id="section-courses">
+		<div class="section-heading">
+			<div class="section-title">教师思变力</div>
+			<div class="section-tags">
+				<a href="">教育幸福感</a>
+				<a href="">教育智慧</a>
+				<a href="">教育影响</a>
+				<a href=""><span>查看全部</span><i class="iconfont ic-arrow-right" style="margin-left: 4px;"></i></a>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="row">
+				{% assign courses = site.courses | where: "category", "教师思变力" | sort: "date" %}
+				{% for course in courses limit: 4 %}
+						<div class="col-md-3">{% include course-item.html course=course %}</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section-courses">
+		<div class="section-heading">
+			<div class="section-title">校长领导力</div>
+			<div class="section-tags">
+				<a href="">教育信念</a>
+				<a href="">管理智慧</a>
+				<a href="">团队发展</a>
+				<a href="">社会影响</a>
+				<a href=""><span>查看全部</span><i class="iconfont ic-arrow-right" style="margin-left: 4px;"></i></a>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="row">
+				{% assign courses = site.courses | where: "category", "校长领导力" %}
+				{% for course in courses limit: 4 %}
+						<div class="col-md-3">{% include course-item.html course=course %}</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section-courses">
+		<div class="section-heading">
+			<div class="section-title">大家说</div>
+			<div class="section-tags">
+				<a href="">重回课堂</a>
+				<a href="">暑期成长营</a>
+				<a href=""><span>查看全部</span><i class="iconfont ic-arrow-right" style="margin-left: 4px;"></i></a>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="row">
+				{% assign courses = site.courses | where: "category", "大家说" %}
+				{% for course in courses limit: 4 %}
+						<div class="col-md-3">{% include course-item.html course=course %}</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="{{ "assets/swiper/js/swiper.min.js" | prepend: site.qiniu }}"></script>
+
+<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		swiper.on('slideChange', function () {
+			var slides = {{ site.data.slides | jsonify }}
+			var activeImage = slides[swiper.realIndex]['image']
+			$(".swiper-background").attr("style", "background-image: url(" + activeImage + "?x-oss-process=image/resize,w_2000,limit_0/format,jpg/quality,Q_90)")
+		});
+</script>

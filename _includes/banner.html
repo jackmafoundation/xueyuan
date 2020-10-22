@@ -1,0 +1,15 @@
+{% if page.header != null %}
+<div class="banner">
+	{% if page.cover != null %}
+		<div class="banner-image" style="background-image: url({{ page.cover }}?x-oss-process=image/resize,w_1920/format,jpg)"></div>
+	{% endif %} 
+	<div class="banner-body container">
+	  <div class="banner-content">
+		<div class="page-title">{{ page.header }}</div>
+		{% if page.secondary != null %}
+		<p class="page-subtitle">{{ page.secondary }}</p>
+		{% endif %}
+	  </div>
+	</div>
+</div>
+{% endif %}

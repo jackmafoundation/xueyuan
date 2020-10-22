@@ -1,0 +1,20 @@
+<div>
+  {% for c in site.courses %}
+    {% if c.title == include.title %}
+      {% assign course = c %}
+    {% endif %}
+  {% endfor %}
+  {% if course %}
+  <a class="embed-item embed-item-course" href="{{course.url}}">
+    <div class="embed-item-cover" style="background-image: url({{ course.cover }})">
+      <div class="hello"></div>
+    </div>
+    <div class="embed-item-text">
+      <div class="embed-item-title">{{ course.title }}</div>
+      <div class="embed-item-abstract">{{ course.abstract }}</div>
+    </div>
+  </a>
+  {% else %}
+    <p>没有找到：{{ include.title }}</p>
+  {% endif %}
+</div>

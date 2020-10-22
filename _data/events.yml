@@ -1,0 +1,62 @@
+# _data/events.yml
+items:
+  - image: https://img.mayun.xin/upload/2020061507/5974754724eea9a9cde5217239241296.jpg
+    title: 马云公益林
+    date: 2020-03-21
+  - image: https://img.mayun.xin/upload/2020032509/40052d3cdfada6c5ab496b6c066dcdce.jpg
+    title: 新冠病毒防治资助计划
+    date: 2020-01-29
+  - image: https://img.mayun.xin/upload/2020032509/eef7a86762639c8ef8457356b71ae573.JPG
+    title: 2019马云乡村教育发展年会暨乡村教师奖颁奖典礼 
+    date: 2020-01-13
+  - image: https://img.mayun.xin/upload/2020032509/ff417bfa4f92eaa55fe4ef330b5ff9f8.JPG
+    title: 非洲创业者基金创业者大赛
+    date: 2019-11-16
+  - image: https://img.mayun.xin/upload/2020032509/08829d2468600006c996fa9d4cc87ec2.JPG
+    title: 马云乡村教育人才计划启航典礼
+    date: 2019-07-15
+  - image: https://img.mayun.xin/upload/2020032509/702ea74637b8812f5c8737672b141978.jpg
+    title: 中国女足十年支持计划启动
+    date: 2019-07-05
+  - image: https://img.mayun.xin/upload/2020032509/0d81d7d8873a35719b783e76d71caaa4.JPG
+    title: 拉萨师范高等专科学校·马云教育基金
+    date: 2019-06-26
+  - image: https://img.mayun.xin/upload/2019031807/2b02da7c78c8e0de558b6eabc3b26b32.jpg
+    title: 2018马云乡村教师奖颁奖典礼
+    date: 2019-01-13
+  - image: https://img.mayun.xin/upload/2019031807/6ac799253dc78741d8928dea2f5e9809.jpg
+    title: 淳安寄宿制学校试点入住仪式 
+    date: 2018-12-08
+  - image: https://img.mayun.xin/upload/2019031807/66afac9b929abdb06d9ecf06d0b6ef2f.jpg 
+    title: 首届乡村校长计划获奖校长夏威夷访学 
+    date: 2018-11-05
+  - image: https://img.mayun.xin/upload/2019031807/f3a302ec67a142b8c7df10d786df318d.jpg
+    title: 2018马云乡村人才计划终评开启 
+    date: 2018-10-16
+  - image: https://img.mayun.xin/upload/2018082906/1e8cf2c85c111dbb91639de7c161af77.jpg
+    title: 2017马云乡村教师奖颁奖典礼
+    date: 2018-01-20
+  - image: https://img.mayun.xin/upload/2018082906/9b80a62854b88d49b154a6ab0f7649b8.jpg
+    title: 马云乡村师范生计划启动
+    date: 2017-12-11
+  - image: https://img.mayun.xin/upload/2018082906/4d7076e65eb9fc0faa3026b1cc534179.jpg
+    title: 贵州寄宿制学校试点
+    date: 2017-11-11
+  - image: https://img.mayun.xin/upload/2018082906/56536939bb647b9eef314aba7957fca4.jpg
+    title: 2016年马云乡村教师奖颁奖典礼
+    date: 2017-01-05
+  - image: https://img.mayun.xin/upload/2018082906/e2ada779cc2f126c079bc0202bc01905.jpg
+    title: 教育公益平台上线
+    date: 2016-10-24
+  - image: https://img.mayun.xin/upload/2018082906/56116ae6bfc258f614f32748a57b2a48.jpg
+    title: 贵州安顺教师交流会
+    date: 2016-08-03
+  - image: https://img.mayun.xin/upload/2018082906/b5daec06f0b93775f000e06311d95bb2.jpg
+    title: 马云乡村校长计划启动
+    date: 2016-07-04
+  - image: https://img.mayun.xin/upload/2018082906/f0128ce2c21ff4a5f999715f54f1c7e1.jpg
+    title: 2015年马云乡村教师奖颁奖典礼
+    date: 2016-01-17
+  - image: https://img.mayun.xin/upload/2018082906/85663647ab0c7e1a94516f39045550e1.jpg
+    title: 马云乡村教师计划启动
+    date: 2015-09-16

@@ -1,0 +1,10 @@
+
+<ul class="post-list">
+{% for post in site.tags[include.tag] limit:10 %}
+  {% unless post.category contains '视频中心' %}
+  <li>
+    {% include post_item.html post="post" %}
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>

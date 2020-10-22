@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="banner post-banner" style="position: absolute;"></div>
+
+<div class="container post" style="position: relative;">
+  <div>
+    {% include aliplayer.html source=page.video cover=page.cover %}
+  </div>
+  <article class="post-content">
+    <div class="page-title">{{ page.title }}</div>
+    <p class="page-subtitle">{{ page.author.name }}，{{ page.author.description }}</p>
+    <p class="page-subtitle">{{ page.date | date: "%Y-%m-%d" }}</p>
+    {{ content }}
+  </article>
+</div>

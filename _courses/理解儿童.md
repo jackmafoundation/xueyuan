@@ -1,0 +1,18 @@
+---
+layout: course
+title: 理解儿童
+abstract: 每一个儿童，都是一株孕育着无穷潜能的魔法种子
+cover: https://cdn.sspai.com/editor/u_nicholaszhang/16007398939166.jpg
+instructors:
+  - name: 袁恩忠
+    avatar: https://img.mayun.xin/upload/2020052809/2c5bd3ecd789a65269e2da8cbc5b4c43.png
+    description: 2019 年马云乡村校长计划入选校长（浙江省湖州市安吉县报福小学）
+  - name: 袁恩忠
+    avatar: https://img.mayun.xin/upload/2020052809/2c5bd3ecd789a65269e2da8cbc5b4c43.png
+    description: 2019 年马云乡村校长计划入选校长（浙江省湖州市安吉县报福小学）
+items: ["读懂儿童，陪他们一起长大", "读懂儿童，陪他们一起长大"]
+category: ["教师思变力"]
+tags:
+---
+
+每一个儿童，都是一株孕育着无穷潜能的魔法种子，但是他们的成长和未来，却会因为土壤的养分、生长的环境以及阳光的照耀而良莠不齐。让每一株种子成长为最适合他们的样子，是教师的职责和使命。教育的路上，带上爱和努力，尊重孩子的天性，让每个孩子成为最好的自己，拥有最灿烂的未来。

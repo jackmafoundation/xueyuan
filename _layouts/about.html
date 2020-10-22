@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include banner.html %}
+{% include nav-tabbar-about.html %}
+<div class="container page">
+  <div class="row">
+    <div class="sidebar col-md-3">
+      {% include nav-sidebar-about.html %}
+    </div>
+    <div class="col-md-9">
+      <article class="spage">
+	    	{{ content }}
+	  	</article>
+    </div>
+  </div>
+</div>

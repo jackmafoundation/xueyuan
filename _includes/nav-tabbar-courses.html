@@ -1,0 +1,5 @@
+<ul class="container tags">
+  {% for item in site.data.navigation_posts.items %}
+    <li class="tag-item {% if page.url == item.link %}active{% endif %}"><a href="{{ item.link }}">{{ item.name }}</a></li>
+  {% endfor %}
+</ul>

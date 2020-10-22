@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="banner post-banner" style="position: absolute;"></div>
+
+<div class="container post">
+	  <article class="post-content">
+      <div class="cover" style="background-image: url({{ page.cover }})"></div>
+      <div class="page-title">{{ page.title }}</div>
+      <p class="page-subtitle">{{ page.abstract }}</p>
+      
+      {{ content }}
+
+      {% if page.instructors %}
+        <h2>讲师介绍</h2>
+        {% for instructor in page.instructors %}
+          {% include instructor.html avatar=instructor.avatar name=instructor.name description=instructor.description %}
+        {% endfor %}
+      {% endif %}
+
+      <h2>课程内容</h2>
+      {% for item in page.items %}
+        {% include article.html title=item %}
+      {% endfor %}
+	  </article>
+</div>

@@ -1,0 +1,9 @@
+<div class="row">
+{% for post in site.tags[include.tag] limit:10 %}
+  {% if post.category contains '视频中心' %}
+  <div class="col-md-4 col-sm-6">
+    {% include video_item.html post="post" %}
+  </div>
+  {% endif %}
+{% endfor %}
+</div>

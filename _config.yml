@@ -1,0 +1,36 @@
+# Site settings
+title: 马云公益基金会
+description: "马云公益基金会由阿里巴巴创始人马云先生于2014年12月15日发起并捐赠成立，主要关注企业家精神、教育、女性领导力、医疗环保四个领域，打造可托付、可参与、可持续的公益组织。"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.mayun.xin" # the base hostname & protocol for your site
+twitter_username: foundation_ma
+github_username:  jackmafoundation
+permalink: /article/:title/
+
+# Build settings
+markdown: kramdown
+
+# 站点信息
+slogan: ""
+qrcode: https://img.mayun.xin/upload/2020031417/8f47db56dd3861351d569e8b19d58dcb.png
+
+# 样式资源主地址
+qiniu: /
+# UGC资源地址
+qiniu_upload: http://7xkw3c.com1.z0.glb.clouddn.com/upload/
+
+collections:
+  videos:
+    output: true
+  courses:
+    output: true
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: "google3d59c5ddb0a27621.html"
+    values:
+      sitemap: false

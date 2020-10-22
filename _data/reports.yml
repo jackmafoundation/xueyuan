@@ -1,0 +1,106 @@
+# _data/reports.yml
+items:
+  - title: 马云先生捐赠明细
+    url: https://img.mayun.xin/upload/2020032816/389043c3a50960694f0609b3a8d02177.png
+    category: 财务信息
+    date: 2020-02-07
+  - title: 代为监管捐赠明细
+    url: https://img.mayun.xin/upload/2020032816/9b1faddb8cbef32027cbb6bf81ed0e69.png
+    category: 财务信息
+    date: 2020-02-07
+  - title: 马云公益基金会五年报告
+    url: https://open.mayun.xin/%E9%A9%AC%E4%BA%91%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%BC%9A%E4%BA%94%E5%B9%B4%E6%8A%A5%E5%91%8A.pdf
+    category: 评估报告
+    date: 2020-02-07
+  - title: 2018年度报告
+    url: https://open.mayun.xin/2018%E5%B9%B4%E5%BA%A6%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A-%E9%A9%AC%E4%BA%91%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%BC%9A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2018年度浙江马云公益基金会审计报告
+    url: https://img.mayun.xin/upload/2019050505/3fab427f622035c3d5841116c3e09d20.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2018年度浙江马云公益基金会专项信息审核报告
+    url: https://img.mayun.xin/upload/2019050505/c38db3a1337b5a47199092ab537d0117.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2017年度报告
+    url: https://open.mayun.xin/2017%E5%B9%B4%E5%BA%A6%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A-%E9%A9%AC%E4%BA%91%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%BC%9A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2017年度浙江马云公益基金会审计报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/2017%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2017年度浙江马云公益基金会专项信息审核报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/%E9%A9%AC%E4%BA%91%E5%9F%BA%E9%87%91%E4%BC%9A2017%E5%B9%B4%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2016年度报告
+    url: https://open.mayun.xin/2016%E5%B9%B4%E5%BA%A6%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A-%E9%A9%AC%E4%BA%91%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%BC%9A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2016年度浙江马云公益基金会审计报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/2016%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2016年度浙江马云公益基金会专项信息审核报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/2016%E5%B9%B4%E5%BA%A6%E4%B8%93%E9%A1%B9%E4%BF%A1%E6%81%AF%E5%AE%A1%E6%A0%B8%E6%8A%A5%E5%91%8A20170329102714371.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2015年度报告
+    url: https://open.mayun.xin/2015%E5%B9%B4%E5%BA%A6%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A-%E9%A9%AC%E4%BA%91%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%BC%9A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2015年度浙江马云公益基金会审计报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/2015%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 2015年度浙江马云公益基金会专项信息审核报告
+    url: https://img.mayun.xin/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%B9%B4%E5%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/2015%E5%B9%B4%E5%BA%A6%E4%B8%93%E9%A1%B9%E4%BF%A1%E6%81%AF%E5%AE%A1%E6%A0%B8%E6%8A%A5%E5%91%8A.pdf
+    category: 年报审计
+    date: 2020-02-07
+  - title: 马云公益基金会章程
+    url: https://img.mayun.xin/upload/2018101108/248f2ec82006b394b26489dc81ccfda8.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 项目管理制度
+    url: https://img.mayun.xin/upload/2018101108/3340305c69f8de6cd4cc3496450bca48.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 信息公开制度
+    url: https://img.mayun.xin/upload/2018101108/da6d46fdeaab082e58570c91f826e0c4.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 重大事件报备制度
+    url: https://img.mayun.xin/upload/2018101108/ffaf792c2c2bc46aeb09ef6045a21cad.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 财务制度
+    url: https://img.mayun.xin/upload/2018101206/d19eee1c628f210d91f2cf24c6f9fa56.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 人事制度
+    url: https://img.mayun.xin/upload/2018101108/c56bd0e0a8f231cff5cc06e24cff67c6.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 行政制度
+    url: https://img.mayun.xin/upload/2018101108/034ed0769dc91c8db1752bd0e708de82.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 档案管理制度
+    url: https://img.mayun.xin/upload/2018101108/240fd11621c2c15d99b6d119dddd7d93.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 志愿者制度
+    url: https://img.mayun.xin/upload/2020051902/8a4d1ce3aa4e90d603150cbcc74b6e9c.pdf
+    category: 规章制度
+    date: 2020-02-07
+  - title: 2019 马云乡村人才计划评估报告
+    url: https://open.mayun.xin/2019%20%E9%A9%AC%E4%BA%91%E4%B9%A1%E6%9D%91%E4%BA%BA%E6%89%8D%E8%AE%A1%E5%88%92%E8%AF%84%E4%BC%B0%E6%8A%A5%E5%91%8A.pdf
+    category: 评估报告
+    date: 2020-02-07
+  - title: 2019 马云乡村教育人才计划·乡村教育家画像白皮书
+    url: https://open.mayun.xin/2019%20%E9%A9%AC%E4%BA%91%E4%B9%A1%E6%9D%91%E6%95%99%E8%82%B2%E4%BA%BA%E6%89%8D%E8%AE%A1%E5%88%92%C2%B7%E4%B9%A1%E6%9D%91%E6%95%99%E8%82%B2%E5%AE%B6%E7%94%BB%E5%83%8F%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf
+    category: 评估报告
+    date: 2020-02-07

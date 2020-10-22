@@ -1,0 +1,28 @@
+<!-- <a class="post-item" href="{{post.url}}">
+  <div class="post-item-cover" style="background-image: url('{{ post.cover }}?x-oss-process=image/resize,w_750/format,jpg');"></div>
+  <div class="post-item-body">
+    <div class="post-item-title">{{ post.title }}</div>
+    <div class="post-item-text">{{ post.summary }}</div>
+    <div class="post-item-meta">
+      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      {% if post.source %}
+        <span>  ·  {{ post.source }}</span>
+      {% endif %}
+    </div>
+  </div>
+</a> -->
+
+
+<a class="post-item" href="{{post.url}}">
+  <div class="post-item-cover" style="background-image: url('{{ post.cover }}?x-oss-process=image/resize,w_750/format,jpg');"></div>
+  <div class="post-item-body">
+    <div class="post-item-title">{{ post.title }}</div>
+    <!-- <div class="post-item-text">{{ post.summary }}</div> -->
+    <div class="post-item-meta">
+      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      {% if post.source %}
+        <span>  ·  {{ post.source }}</span>
+      {% endif %}
+    </div>
+  </div>
+</a>

@@ -1,0 +1,8 @@
+# _data/lives.yml
+items:
+  - cover: https://img.mayun.xin/upload/2020061507/5974754724eea9a9cde5217239241296.jpg
+    title: 测试直播课 A
+    date: 2020-10-28
+  - cover: https://img.mayun.xin/upload/2020061507/5974754724eea9a9cde5217239241296.jpg
+    title: 测试直播课 B
+    date: 2020-10-19

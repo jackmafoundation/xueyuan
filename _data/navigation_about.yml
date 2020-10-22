@@ -1,0 +1,12 @@
+# _data/nav-about.yml
+items:
+  - name: 关于我们
+    link: /about/
+  - name: 信息公开
+    link: /disclosure/
+  - name: 大事记
+    link: /events/
+  - name: 组织架构
+    link: /team/
+  - name: 加入我们
+    link: /career/

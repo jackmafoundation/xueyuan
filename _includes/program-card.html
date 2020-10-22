@@ -1,0 +1,39 @@
+<div class="col-md-6">
+  {% for program in site.programs %}
+    {% if program.title == include.title %}
+  <a class="card program-item" href="{{ program.url }}" >
+      <div class="card-img-top" style="background-image: url('{{ program.cover }}?x-oss-process=image/resize,w_1000/format,jpg');">
+      </div>
+      <div class="card-body">
+        <div class="card-title">
+          {% if program.type == "资助" %}
+            <span class="tag">资助</span>
+          {% endif %}
+          <span>{{ program.title }}</span>
+        </div>
+        {% if program.slogan %}
+          <p class="card-text">{{ program.slogan }}</p>
+        {% endif %}
+      </div>
+    </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<!-- {% for program in site.programs %}
+  {% if program.title == include.title %}
+  <div class="program-item">
+    <div class="cover" style="background-image: url('{{ program.cover }}')" data-toggle="modal" data-target="#myModal"></div>
+    <div class="content">
+      <h3 class="title">{{ program.title }}</h3>
+      {% if program.slogan %}
+        <p class="slogan">{{ program.slogan }}</p>
+        {% endif %}
+      <p class="description">{{ program.intro }}</p>
+      {% if program.link %}
+        <a class="btn" href="{{ program.link }}">Learn More</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+{% endfor %} -->

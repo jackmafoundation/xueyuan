@@ -1,0 +1,10 @@
+# _data/nav-posts.yml
+items:
+  - name: 最新动态
+    link: /news
+  - name: 公益故事
+    link: /stories
+  - name: 视频中心
+    link: /videos
+  - name: 媒体报道
+    link: /media

@@ -1,0 +1,14 @@
+<div class="period-item col-md-4">
+  <div class="period">
+    <div class="period-cover" style="background-image: url({{ include.cover }}?x-oss-process=image/resize,w_900,limit_0/format,jpg/quality,Q_90);">
+      <div class="mask"></div>
+      <div class="year">{{ include.year }}</div>
+    </div>
+    <div class="period-actions">
+      <a href="{{ include.winners }}" class="btn-link r-line">{{ include.winners_label }}</a> 
+      {% if include.nomination %}
+        <a href="{{ include.nomination }}" class="btn-link">提名名单</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
