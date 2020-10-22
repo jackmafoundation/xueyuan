@@ -135,11 +135,11 @@
     height: 360px;
     background-size: cover;
     background-position: center;
+    margin-top: 30px;
   }
   .page-title {
     font-size: 28px;
     font-weight: bold;
-    margin-top: 20px;
     margin-bottom: 10px;
   }
   .page-subtitle {
@@ -182,16 +182,13 @@
   @media screen and (max-width: 768px) {
     .cover {
       height: 220px;
-      margin: 0 -15px;
+      margin: 0;
     }
     &.container {
       padding: 0;
     }
     article {
-      padding: 0 0 40px 0;
-    }
-    .post-content {
-      padding: 0 15px;
+      padding: 20px 15px 40px 15px;
     }
   }
 }
@@ -222,6 +219,16 @@
   }
   .banner-body {
     color: white;
+  }
+}
+
+.prism-player {
+  margin-top: 0;
+}
+
+.post {
+  .prism-player {
+    margin-top: 30px;
   }
 }
 

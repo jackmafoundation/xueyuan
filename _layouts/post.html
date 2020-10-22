@@ -5,12 +5,12 @@ layout: default
 <div class="banner post-banner" style="position: absolute;"></div>
 
 <div class="container post" style="position: relative;">
-  <article>
-    {% if page.video %}
+  {% if page.video %}
       {% include aliplayer.html source=page.video.source cover=page.cover %}
-    {% else %}
-      <div class="cover" style="background-image: url({{ page.cover }})"></div>
-    {% endif %}
+  {% else %}
+    <div class="cover" style="background-image: url({{ page.cover }})"></div>
+  {% endif %}
+  <article>
     <div class="post-content">
       <div class="page-title">{{ page.title }}</div>
       {% if page.author %}

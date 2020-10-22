@@ -5,11 +5,10 @@ layout: default
 <div class="banner post-banner" style="position: absolute;"></div>
 
 <div class="container post">
+    <div class="cover" style="background-image: url({{ page.cover }})"></div>
 	  <article class="post-content">
-      <div class="cover" style="background-image: url({{ page.cover }})"></div>
       <div class="page-title">{{ page.title }}</div>
       <p class="page-subtitle">{{ page.abstract }}</p>
-      
       {{ content }}
 
       {% if page.instructors %}
