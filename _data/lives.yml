@@ -1,8 +1,31 @@
 # _data/lives.yml
 items:
-  - cover: https://img.mayun.xin/upload/2020061507/5974754724eea9a9cde5217239241296.jpg
-    title: 测试直播课 A
-    date: 2020-10-28
-  - cover: https://img.mayun.xin/upload/2020061507/5974754724eea9a9cde5217239241296.jpg
-    title: 测试直播课 B
-    date: 2020-10-19
+  - title: 学校管理16字指南
+    url: https://www.baidu.com
+    date: 2020-10-30 19:30
+    abstract: 包瑞
+  - title: 脑与学习小班教学实践讨论
+    url: https://www.baidu.com
+    date: 2020-10-10 19:30
+    abstract: 林思恩
+  - title: 以脑科学视角设计大班教学
+    url: https://www.baidu.com
+    date: 2020-09-23 19:30
+    abstract: 林思恩
+  - title: 学习的脑基础
+    url: https://www.baidu.com
+    date: 2020-09-17 19:30
+    abstract: 林思恩
+  - title: 从脑科学视角理解儿童学习
+    url: https://www.baidu.com
+    date: 2020-09-17 19:30
+    abstract: 林思恩
+  - title: 对话朱俊娣：爱的传承
+    url: https://www.baidu.com
+    date: 2020-09-17 19:30
+    abstract: 魏晓明
+  - title: 周群：教师如何促进自我的全人发展
+    url: https://www.baidu.com
+    date: 2020-09-17 19:30
+    abstract: 周群
+  

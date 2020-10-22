@@ -1,0 +1,40 @@
+---
+layout: post
+title: 直播日历
+permalink: /lives/
+cover: https://img.mayun.xin/upload/2020102215/68bbfb536df28e9bd05bee9ad7ba6a52.jpg
+---
+
+<h2>预告</h2>
+
+{% for course in site.data.lives.items %}
+{% capture current_timestamp %}{{'now' | date: '%s'}}{% endcapture %}
+{% capture course_timestamp %}{{course.date | date: '%s'}}{% endcapture %}
+{% if course_timestamp > current_timestamp %}
+<a class="embed-item embed-item-live" href="{{ course.url }}">
+  <div class="embed-item-cover" style="background-image: url({{ course.cover }})"></div>
+  <div class="embed-item-text">
+    <div class="embed-item-date">{{ course.date | date: "%m月%d日 %H:%M"}}</div>
+    <div class="embed-item-title">{{ course.title }}</div>
+    <div class="embed-item-abstract">{{ course.abstract }}</div>
+  </div>
+</a>
+{% endif %}
+{% endfor %}
+
+<h2>回放</h2>
+
+{% for course in site.data.lives.items %}
+{% capture current_timestamp %}{{'now' | date: '%s'}}{% endcapture %}
+{% capture course_timestamp %}{{course.date | date: '%s'}}{% endcapture %}
+{% if course_timestamp < current_timestamp %}
+<a class="embed-item embed-item-live" href="{{ course.url }}">
+  <div class="embed-item-cover" style="background-image: url({{ course.cover }})"></div>
+  <div class="embed-item-text">
+    <div class="embed-item-date" style="color: #999">回放</div>
+    <div class="embed-item-title">{{ course.title }}</div>
+    <div class="embed-item-abstract">{{ course.abstract }}</div>
+  </div>
+</a>
+{% endif %}
+{% endfor %}

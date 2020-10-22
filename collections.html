@@ -1,9 +1,10 @@
 ---
 layout: wide
 title: 课程专题
-permalink: /collection/
+permalink: /collections/
 header: 课程专题
 ---
+
 
 <div class="header-view">
   <div class="static-banner">
@@ -11,46 +12,20 @@ header: 课程专题
       <div class="banner-title">{{ page.title }}</div>
     </div>
   </div>
-
-  <div class="nav-tabs">
-    <div class="container">
-    <div class="nav-tab-item">
-      <a href="#教师思变力">教师思变力</a>
-    </div>
-    <div class="nav-tab-item">
-      <a href="#校长领导力">校长领导力</a>
-    </div>
-    <div class="nav-tab-item">
-      <a href="#大家说">大家说</a>
-    </div>
-    </div>
-  </div>
 </div>
 
-<div class="container">
+<div class="container post" style="position: relative; padding-top: 30px;">
   <article>
-    <h2 id="教师思变力">教师思变力</h2>
-    <div class="row">
-      {% assign courses = site.courses | where: "category", "教师思变力" | sort: "date" %}
-      {% for course in courses %}
-          <div class="col-md-3 col-sm-6">{% include course-item.html course=course %}</div>
-      {% endfor %}
-    </div>
-
-    <h2 id="校长领导力">校长领导力</h2>
-    <div class="row">
-      {% assign courses = site.courses | where: "category", "校长领导力" | sort: "date" %}
-      {% for course in courses %}
-          <div class="col-md-3">{% include course-item.html course=course %}</div>
-      {% endfor %}
-    </div>
-
-    <h2 id="大家说">大家说</h2>
-    <div class="row">
-      {% assign courses = site.courses | where: "category", "大家说" | sort: "date" %}
-      {% for course in courses %}
-          <div class="col-md-3">{% include course-item.html course=course %}</div>
-      {% endfor %}
+    <div class="post-content">
+      <div class="collections row">
+        {% for post in site.posts %}
+          {% if post.type == "collection" %}
+            <div class="col-md-3">
+              <a href="{{ post.url }}" class="collection-cover" style="background-image: url({{ post.cover }})"></a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </article>
 </div>

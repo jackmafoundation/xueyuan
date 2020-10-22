@@ -20,6 +20,7 @@
     height: 100px;
     float: left;
     border-radius: 2px;
+    background-color: #f0f0f0;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -123,6 +124,14 @@
   }
 }
 
+.embed-item.embed-item-live {
+  .embed-item-date {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+}
+
 
 .banner.course-banner {
   height: auto;
@@ -133,6 +142,7 @@
   .cover {
     min-width: 100%;
     height: 360px;
+    background-color: #e0e0e0;
     background-size: cover;
     background-position: center;
     margin-top: 30px;
@@ -616,7 +626,7 @@ article {
   -moz-transition: all .2s linear;
   transition: all .2s linear;
   .cover {
-    background: url(https://img.mayun.xin/upload/2020051908/7021ce3bb04758be69d7c0fe2d652271.jpg) no-repeat;
+    background-color: #f0f0f0;
     width: 100%;
     height: 140px;
     background-size: cover;
@@ -844,5 +854,29 @@ article {
     background: #ccc;
     margin: 0 auto;
     margin-bottom: 6px;
+  }
+}
+
+
+.collections {
+  .col-md-6 {
+    
+  }
+  .collection-cover {
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    border-radius: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .collection-cover {
+      height: 200px;
+      margin-bottom: 15px;
+      display: block;
+    }
   }
 }
