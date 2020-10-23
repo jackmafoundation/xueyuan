@@ -13,10 +13,10 @@ collections:
       preview: false
     fields:
       - { label: '布局', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: '标题', name: 'title', widget: 'string' }
+      - { label: '标题', name: 'title', widget: 'string', required: true }
       - { label: '日期', name: 'date', widget: 'datetime' }
       - { label: '摘要', name: 'abstract', widget: 'string', required: false }
-      - { label: '封面', name: 'cover', widget: 'image' }
+      - { label: '封面', name: 'cover', widget: 'image', required: false }
       - label: "视频"
         name: "video"
         widget: "object"
