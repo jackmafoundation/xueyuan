@@ -322,12 +322,6 @@ article {
   overflow: auto;
 }
 
-.home-swiper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
 .swiper-background {
   width: 100%;
   height: 640px;
@@ -358,6 +352,7 @@ article {
   width: 100%;
   max-width: 1600px;
   height: 100%;
+  
 
   .swiper-slide {
     text-align: center;
@@ -686,7 +681,7 @@ article {
 
 .header-view {
   .static-banner {
-    background: #ff7200;
+    background: #f0f0f0;
     text-align: center;
     height: 220px;
     overflow: auto;
@@ -742,6 +737,12 @@ article {
   .home-swiper {
     width: 52%;
     float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    @media screen and (max-width: 768px) {
+      border-radius: 0;
+    }
   }
   .home-banner-navs {
     width: 48%;

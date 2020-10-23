@@ -17,6 +17,23 @@ collections:
       - { label: '日期', name: 'date', widget: 'datetime' }
       - { label: '摘要', name: 'abstract', widget: 'string', required: false }
       - { label: '封面', name: 'cover', widget: 'image' }
-      - { label: '分类', name: 'category', widget: 'select', multiple: true, options: ["最新动态", "公益故事", "视频中心", "媒体报道"]  }
+      - label: "视频"
+        name: "video"
+        fields:
+          - {label: "视频链接", name: 'source', widget: string}
+          - {label: "时间", name: time, widget: string}
+  - name: 'course'
+    label: '课程'
+    folder: '_courses/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: '布局', name: 'layout', widget: 'hidden', default: 'course' }
+      - { label: '标题', name: 'title', widget: 'string', required: true }
+      - { label: '摘要', name: 'abstract', widget: 'string', required: false }
+      - { label: '封面', name: 'cover', widget: 'image', required: false }
+      - { label: '引用视频/文章', name: 'items', widget: 'list', required: true }
+      - { label: '分类', name: 'category', widget: 'select', multiple: true, options: ["教师思变力", "校长领导力", "大家说"]  }
       - { label: '标签', name: 'tags', widget: 'list', required: false }
-      - { label: '正文', name: 'body', widget: 'markdown' }
