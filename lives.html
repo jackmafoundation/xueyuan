@@ -11,7 +11,7 @@ cover: https://img.mayun.xin/upload/2020102215/68bbfb536df28e9bd05bee9ad7ba6a52.
 {% capture current_timestamp %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture course_timestamp %}{{course.date | date: '%s'}}{% endcapture %}
 {% if course_timestamp > current_timestamp %}
-<a class="embed-item embed-item-live" href="{{ course.url }}">
+<a class="embed-item embed-item-live" href="{{ course.url }}" target="_blank">
   <div class="embed-item-cover" style="background-image: url({{ course.cover }})"></div>
   <div class="embed-item-text">
     <div class="embed-item-date">{{ course.date | date: "%m月%d日 %H:%M"}}</div>
