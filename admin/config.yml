@@ -7,7 +7,7 @@ collections:
   - name: 'blog'
     label: '文章'
     folder: '_posts/'
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -23,10 +23,11 @@ collections:
         fields:
           - {label: "视频链接", name: 'source', widget: string}
           - {label: "时间", name: time, widget: string}
+      - { label: '正文', name: 'body', widget: 'markdown' }
   - name: 'course'
     label: '课程'
     folder: '_courses/'
-    create: true
+    create: false
     slug: '{{slug}}'
     editor:
       preview: true
@@ -42,3 +43,4 @@ collections:
         field: {label: "标题", name: 'title', widget: "string"}
       - { label: '分类', name: 'category', widget: 'select', multiple: true, options: ["教师思变力", "校长领导力", "大家说"]  }
       - { label: '标签', name: 'tags', widget: 'list', required: false }
+      - { label: '正文', name: 'body', widget: 'markdown' }
