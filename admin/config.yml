@@ -23,7 +23,7 @@ collections:
         fields:
           - {label: "视频链接", name: 'source', widget: string}
           - {label: "时间", name: time, widget: string}
-      - { label: '分类', name: 'type', widget: 'select', options: ["post, "collection"]  }
+      - { label: '类别', name: 'type', widget: 'select', options: ["post", "collection"]  }
       - { label: '正文', name: 'body', widget: 'markdown' }
   - name: 'course'
     label: '课程'
