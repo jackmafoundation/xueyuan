@@ -1,6 +1,6 @@
 # Site settings
-title: 马云公益基金会
-description: "马云公益基金会由阿里巴巴创始人马云先生于2014年12月15日发起并捐赠成立，主要关注企业家精神、教育、女性领导力、医疗环保四个领域，打造可托付、可参与、可持续的公益组织。"
+title: 马云乡村教育学苑
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.mayun.xin" # the base hostname & protocol for your site
 twitter_username: foundation_ma
