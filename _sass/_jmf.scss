@@ -1,3 +1,5 @@
+$brandColor: #ff7200;
+
 .hello {
   display: block
 }
@@ -10,7 +12,7 @@
   display: block;
   position: relative;
   clear: both;
-  padding: 15px 0;
+  padding: 20px 0;
   border-top: 1px solid #f3f3f3;
   border-bottom: 1px solid #f3f3f3;
   margin-top: -1px;
@@ -61,7 +63,7 @@
       font-style: normal;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      content: '\f07f';
+      // content: '\f07f';
       color: #c3c3c3;
       position: absolute;
       right: 0;
@@ -96,6 +98,7 @@
     }
     .embed-item-text {
       margin-left: 112px;
+      padding-right: 0;
       .embed-item-abstract {
         display: none;
       }
@@ -137,7 +140,6 @@
   height: auto;
 }
 
-
 .post {
   .cover {
     min-width: 100%;
@@ -161,32 +163,6 @@
     padding: 4px 10px;
     background: #ff7200;
     color: white;
-  }
-
-  .course-ref-card {
-    background: #f5f5f5;
-    padding: 10px 15px;
-    display: block;
-    color: inherit;
-    border-radius: 2px;
-    margin: 20px 0 20px 0;
-    position: relative;
-    color: #888;
-    &::after {
-      font-family: "iconfont" !important;
-      font-size: 16px;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: '\f07f';
-      color: #c3c3c3;
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 14px;
-      transition: all .3s ease-in-out;
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -234,7 +210,8 @@
 
 .post {
   .prism-player {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
     @media screen and (max-width: 768px) {
       margin-top: 0;
     }
@@ -242,11 +219,15 @@
 }
 
 article {
+  color: #444;
   padding: 20px 0 40px 0;
   h2 {
     font-family: FZCUJINLJW--GB1-0;
     border: none;
     font-weight: normal;
+    margin-top: 0;
+    font-size: 24px;
+    padding-top: 60px;
     &::before {
       content: url(https://h5.mayun.xin/academy/img/heading-icon.879a180b.svg);
       width: 20px;
@@ -260,6 +241,7 @@ article {
     h2 {
       font-size: 18px;
       margin-bottom: 15px;
+      padding-top: 40px;
     }
   }
 }
@@ -276,6 +258,7 @@ article {
     background-size: cover;
     float: left;
     border-radius: 50%;
+    background-color: #f0f0f0;
   }
   .user-intro {
     flex: 1;
@@ -487,27 +470,22 @@ article {
   background: #FFFFFF;
   box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.05);
   border-bottom: none;
-  height: 48px;
-  display: flex;
+  height: 54px;
   .container {
     display: flex;
-    width: 100%;
-    max-width: 600px !important;
   }
   .nav-tab-item {
-    flex: 1;
-    text-align: center;
+    text-align: left;
     a {
-      font-family: AlibabaPuHuiTi-Medium;
-      font-size: 14px;
-      line-height: 48px;
+      font-size: 16px;
+      line-height: 52px;
       color: #454545;
       letter-spacing: 0.19px;
       text-decoration: none;
       background: #FFFFFF;
       position: relative;
       display: inline-block;
-      padding: 0 20px;
+      margin-right: 40px;
       cursor: pointer;
       &:hover {
         &::after {
@@ -537,6 +515,34 @@ article {
   }
 }
 
+.nav-tabs.nav-tabs-default {
+
+}
+
+.nav-tabs.nav-tabs-center {
+  display: flex;
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 600px !important;
+  }
+  .nav-tab-item {
+    flex: 1;
+    text-align: center;
+    a {
+      padding: 0 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+.page-course-detail {
+  .intro {
+    width: 700px;
+    max-width: 100%;
+  }
+}
+
 
 .topics {
   margin: 0 -20px;
@@ -547,7 +553,7 @@ article {
   .topic-card {
     height: 100px;
     background-size: cover;
-    background-position: center;;
+    background-position: center;
   }
 }
 
@@ -634,7 +640,7 @@ article {
   .text {
     padding: 12px 0;
     .title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 500;
       color: #333;
     }
@@ -679,6 +685,50 @@ article {
 }
 
 
+.banner {
+  .banner-content {
+    .banner-title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+      position: relative;
+      .banner-tag {
+        border-width: 1px;
+        border-style: solid;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        font-size: 12px;
+        color: #aaaaaa;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px 4px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+      }
+    }
+    .banner-subtitle {
+      margin-top: 10px;
+      opacity: 0.6;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 240px;
+    .banner-content {
+      .banner-title {
+        font-size: 20px;
+      }
+      .banner-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
 .header-view {
   .static-banner {
     background: #f0f0f0;
@@ -706,14 +756,6 @@ article {
 }
 
 .page-wide {
-  article {
-    padding-top: 0;
-    h2 {
-      margin-top: 0;
-      padding-top: 50px;
-    }
-  }
-
   .col-md-3 {
     .course {
       margin-bottom: 20px;
@@ -901,3 +943,49 @@ article {
     display: block;
   }
 }
+
+.course-playlist-card {
+  border: 1px solid #f3f3f3;
+  background: white;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 15px;
+  .course-ref-card {
+    display: block;
+    color: inherit;
+    border-radius: 2px;
+    position: relative;
+    color: #333;
+    padding: 15px 20px;
+    background: #444;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  ul {
+    line-height: 1.6;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    padding: 15px 20px;
+    li a {
+      display: block;
+      color: #888;
+      padding: 8px 0;
+      &.active {
+        color: $brandColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.fixed-playlist-container {
+  position: fixed;
+  top: 110px;
+  width: 700px;
+}
+

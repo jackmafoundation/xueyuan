@@ -1,26 +1,69 @@
 ---
-layout: default
+layout: wide
 ---
 
 <div class="banner post-banner" style="position: absolute;"></div>
 
-<div class="container post" style="position: relative;">
+{% for course in site.courses %}
+{% if course.items contains page.title %}
+  {% assign course=course %}
+{% endif %}
+{% endfor %}
+
+
+{% if course %}
+<div class="container post" style="position: relative; padding-top: 30px;">
+  <div class="row">
+    <div class="col-md-9">
+      {% if page.video %}
+        {% include aliplayer.html source=page.video.source cover=page.cover %}
+      {% else %}
+        <div style="width: 700px;">
+          <div class="cover" style="background-image: url({{ page.cover }})"></div>
+        </div>
+      {% endif %}
+
+      <article>
+        <div class="post-content">
+          <div class="page-title">{{ page.title }}</div>
+          {% if page.author %}
+            <p class="page-subtitle">{{ page.author }}</p>
+          {% endif %}
+          {{ content }}
+        </div>
+      </article>
+    </div>
+
+    <div class="col-md-3">
+      {% for course in site.courses %}
+        {% if course.items contains page.title %}
+          {% assign course=course %}
+        {% endif %}
+      {% endfor %}
+      {% include course-playlist.html course=course current=page.title %}
+    </div>
+  </div>
+</div>
+{% else %}
+
+<div class="container post" style="width: 700px;">
   {% if page.video %}
-      {% include aliplayer.html source=page.video.source cover=page.cover %}
+    {% include aliplayer.html source=page.video.source cover=page.cover %}
   {% else %}
-    <div class="cover" style="background-image: url({{ page.cover }})"></div>
+    <div style="max-width: 700px;">
+      <div class="cover" style="background-image: url({{ page.cover }})"></div>
+    </div>
   {% endif %}
+
   <article>
     <div class="post-content">
       <div class="page-title">{{ page.title }}</div>
       {% if page.author %}
         <p class="page-subtitle">{{ page.author }}</p>
       {% endif %}
-      {% for course in site.courses %}
-        {% if course.items contains page.title %}
-        <a href="{{ course.url }}" class="course-ref-card">相关课程：{{ course.title }}</a>
-        {% endif %}
-      {% endfor %}
       {{ content }}
     </div>
+  </article>
 </div>
+
+{% endif %}

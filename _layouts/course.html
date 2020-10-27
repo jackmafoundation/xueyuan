@@ -1,26 +1,61 @@
 ---
-layout: default
+layout: wide
 ---
 
-<div class="banner post-banner" style="position: absolute;"></div>
+<div class="page-course-detail">
+
+<div class="banner" style="background-image: linear-gradient(106deg, #464E75 0%, #757CA1 100%); color: white;">
+  <div class="banner-content container">
+    <div class="banner-title">{{ page.title }}<div class="banner-tag">课程</div></div>
+    {% if page.abstract %}
+      <div class="banner-subtitle">{{ page.abstract }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="nav-tabs nav-tabs-default">
+  <div class="container">
+    <div class="nav-tab-item">
+      <a href="#intro">关于</a>
+    </div>
+    <div class="nav-tab-item">
+      <a href="#items">课程内容</a>
+    </div>
+    <div class="nav-tab-item">
+      <a href="#instructors">讲师</a>
+    </div>
+  </div>
+</div>
 
 <div class="container post">
-    <div class="cover" style="background-image: url({{ page.cover }})"></div>
 	  <article class="post-content">
-      <div class="page-title">{{ page.title }}</div>
-      <p class="page-subtitle">{{ page.abstract }}</p>
-      {{ content }}
+      <h2 id="#intro" style="padding-top: 30px;">课程介绍</h2>
+      <div class="intro">
+        {{ content }}
+      </div>
+
+      <h2 id="items">课程内容</h2>
+      <div class="row" style="margin-bottom: 20px;">
+        {% for item in page.items %}
+            <div class="col-md-6">
+          {% include article.html title=item %}
+        </div>
+        {% endfor %}
+      </div>
 
       {% if page.instructors %}
-        <h2>讲师介绍</h2>
+        <h2 id="instructors">讲师</h2>
+        <div class="row">
+          
         {% for instructor in page.instructors %}
+        <div class="col-md-6">
           {% include instructor.html avatar=instructor.avatar name=instructor.name description=instructor.description %}
+        </div>
         {% endfor %}
+        </div>
       {% endif %}
 
-      <h2>课程内容</h2>
-      {% for item in page.items %}
-        {% include article.html title=item %}
-      {% endfor %}
 	  </article>
+</div>
+
 </div>

@@ -1,0 +1,19 @@
+<div class="course-playlist-card">
+  <a href="{{ include.course.url }}" class="course-ref-card">{{ include.course.title }}</a>
+  <ul>
+    {% for item in include.course.items %}
+      <li>
+        {% for p in site.posts %}
+          {% if p.title == item %}
+            {% assign post = p %}
+          {% endif %}
+        {% endfor %}
+        {% if post %}
+        <a href="{{ post.url }}" class="{% if post.title == include.current %}active{% endif %}">{{ post.title }}</a>
+        {% else %}
+          <p>没有找到：{{ item }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
