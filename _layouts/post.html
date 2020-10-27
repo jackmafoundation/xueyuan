@@ -46,7 +46,7 @@ layout: wide
 </div>
 {% else %}
 
-<div class="container post" style="width: 700px;">
+<div class="container post" style="max-width: 700px;">
   {% if page.video %}
     {% include aliplayer.html source=page.video.source cover=page.cover %}
   {% else %}

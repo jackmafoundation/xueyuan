@@ -6,7 +6,7 @@
   {% endfor %}
   {% if post %}
   <a class="embed-item" href="{{post.url}}">
-    <div class="embed-item-cover" style="background-image: url({{ post.cover }})">
+    <div class="embed-item-cover" style="background-image: url({{ post.cover }}?x-oss-process=image/resize,w_800)">
       {% if post.video %}
       <div class="v-badge"><i class="iconfont ic-play"></i>{{ post.video.time }}</div>
       {% endif %}

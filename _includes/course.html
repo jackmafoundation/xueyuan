@@ -6,7 +6,7 @@
   {% endfor %}
   {% if course %}
   <a class="embed-item embed-item-course" href="{{course.url}}">
-    <div class="embed-item-cover" style="background-image: url({{ course.cover }})">
+    <div class="embed-item-cover" style="background-image: url({{ course.cover }})?x-oss-process=image/resize,w_800">
       <div class="hello"></div>
     </div>
     <div class="embed-item-text">

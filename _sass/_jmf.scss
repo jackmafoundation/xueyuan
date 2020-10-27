@@ -167,7 +167,7 @@ $brandColor: #ff7200;
 
   @media screen and (max-width: 768px) {
     .cover {
-      height: 220px;
+      height: 240px;
       margin: 0;
     }
     &.container {
@@ -640,7 +640,7 @@ article {
   .text {
     padding: 12px 0;
     .title {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       color: #333;
     }
@@ -989,3 +989,43 @@ article {
   width: 700px;
 }
 
+.embed-course-group {
+  padding: 15px 24px;
+  background-color: #fafafa;
+  list-style: none;
+  border-radius: 8px;
+  a {
+    line-height: 2;
+    color: inherit;
+    display: block;
+    position: relative;
+    
+    &:hover {
+      color: #222;
+      font-weight: bold;
+      &::after {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\f07f';
+        color: #c3c3c3;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}
+
+.courses-outline {
+  h3 {
+    font-size: 16px;
+    color: $brandColor;
+    margin-top: 40px;
+  }
+}

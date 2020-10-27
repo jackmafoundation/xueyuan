@@ -80,9 +80,9 @@ layout: home
 		</div>
 		<div class="section-content">
 			<div class="row">
-				{% assign courses = site.courses | where: "category", "教师思变力" | sort: "date" %}
-				{% for course in courses limit: 4 %}
-						<div class="col-md-3">{% include course-item.html course=course %}</div>
+				{% assign courses = site.courses | where: "category", "教师思变力" | where: "featured", true %}
+				{% for course in courses %}
+					<div class="col-md-3">{% include course-item.html course=course %}</div>
 				{% endfor %}
 			</div>
 		</div>
@@ -121,7 +121,7 @@ layout: home
 		<div class="section-content">
 			<div class="row">
 				{% assign courses = site.courses | where: "category", "大家说" %}
-				{% for course in courses limit: 4 %}
+				{% for course in courses %}
 						<div class="col-md-3">{% include course-item.html course=course %}</div>
 				{% endfor %}
 			</div>
