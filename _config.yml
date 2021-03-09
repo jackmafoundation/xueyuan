@@ -1,7 +1,7 @@
 # Site settings
 title: 马云乡村教育学苑
 description: ""
-baseurl: "/xueyuan/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.mayun.xin" # the base hostname & protocol for your site
 twitter_username: foundation_ma
 github_username:  jackmafoundation
